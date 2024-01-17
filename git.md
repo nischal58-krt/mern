@@ -5,5 +5,7 @@ initial projrct setup
 3. to check step 2
     git remote -v
     <!--  day to day -->
-    1.git status
+     1. git status // optional
     2. git add .
+    3. git commit -m ("add new features")
+    4. git push 

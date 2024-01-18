@@ -62,3 +62,44 @@ courses[0].syallabus[0].title="javascript"
 courses[0].syallabus[0].duration="23 days"
 
 console.log("Course Details", courses);
+let germanClass = [
+       {
+              level : "A1 BL",
+              duration:"9 weeks",
+              lehrer:"Abinash",
+              grammatik : [
+                     {
+                     week1:"Satz Formen",
+                     week2:"Nominativ,Akkusativ",
+                     week3:"verben und Partizip II",
+                     }
+              ]
+       },
+
+       {
+              level : "A2 BL",
+              duration:"10 weeks",
+              lehrer:"Sang Kim",
+              grammatik : [
+                     {
+                     week1:"A1 Wiederholung",
+                     week2:"Dativ,Vergangenheit,prateritum",
+                     week3:"Haptsatz,Nebensatz.Adjektivendugen",
+                     }
+              ]
+       },
+       {
+              level : "B1 BL",
+              duration:"12 weeks",
+              lehrer:"Sebastian",
+              grammatik : [
+                     {
+                     week1:"Blog lesen",
+                     week2:"Genitiv",
+                     week3:"Relativ Clause",
+                     }
+              ]
+       },
+]
+germanClass[2].grammatik[2]="Connectors,Nachfield"
+console.log("german language classes",germanClass);

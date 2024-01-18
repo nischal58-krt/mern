@@ -329,4 +329,9 @@ let todos = [
               createdAt : "2024-05=6",
        },
 ]
+todos[3].status="completed"
 console.log(todos);
+console.log(`${todos[3].title}  createdAt ${todos[3].createdAt} is ${todos[3].status}`)
+
+// console.log(`${todos[4].title} created at ${todos[4].createdAt} is ${todos[4].status}`);
+

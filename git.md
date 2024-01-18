@@ -9,4 +9,6 @@ initial projrct setup
     2. git add .
     3. git commit -m ("add new features")
     4. git push 
-co
+     5. to pull 
+     git fetch
+     git push

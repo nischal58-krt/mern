@@ -10,5 +10,5 @@
         and use home and end keys in keyboard
         // hold alt key and press click
 // use home and end keys in keyboard
-// DRY(donot repeat yourself)
+// DRY(donot repeat yourselef
 */

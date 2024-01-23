@@ -1,14 +1,11 @@
 /*
+    -function is reuseable
     -Block of code that performs specific task
     -can be invoked whenever needed
 syntax: 
 function functionName(){ // Function Definiton
     //do some work
 }
- Function call
- functionName();
-double(2) 2*2 = 4
-double (6) 6*2 =12
 */
 
 function myFunction(msg) {
@@ -100,3 +97,67 @@ let newArr= numb.map((val) => {
 return val*2
 });
 console.log(newArr);
+
+function double(input) {
+    let result = 2* input
+console.log(`input:${input},  2* ${input}= ${result}`);
+}
+double(9)
+ function sum(input1,input2){
+    let s = input1 + input2
+    console.log( `input1:${input1},  input2:${input2} sum = ${s}`);
+ }
+ sum(23,5)
+
+ let  arrowDiv = (input1,input2) =>{
+    console.log(input1/input2);
+ }
+ 
+function diff(input1= 0,input2= 0,input3= 0) {
+    let result = input1 - input2 - input3
+    console.log(`input1:${input1}, input2:${input2}, input3:${input3} diff = ${result}`);
+}
+diff(45,19,11)
+
+let arrowDif = (input1,input2,input3) =>{
+    console.log(input1 - input2,input3);
+}
+"2024-01-19T13:01:03.486205+05:45".substring(0,10)
+
+"Exploring Tomorrow :2024-01-19 "
+"Career in Web : 2024-01-18 "
+"Exploring Tomorrow :2024-01-19 "
+"Exploring Tomorrow :2024-01-19 "
+
+let blogs = [
+  {
+    title:
+      "Exploring Tomorrow",
+    created_at: "2024-01-19T13:01:03.486205+05:45",
+  },
+  {
+    title:
+      "Career in Web ",
+    created_at: "2024-01-18T15:02:21.353832+05:45",
+  },
+  {
+    title:
+      "Degrees Dying",
+    created_at: "2024-01-17T14:06:24.457394+05:45",
+  },
+  {
+    title:
+      "Career in Digital Marketing",
+    created_at: "2024-01-17T11:02:40.936608+05:45",
+  },
+];
+function blogInfo(index) {
+    console.log(
+        `${blogs[index].title}: ${blogs[index].created_at.substring(0,10)}`
+    );
+}
+blogInfo(0);
+blogInfo(1);
+blogInfo(2);
+blogInfo(3);
+

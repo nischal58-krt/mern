@@ -111,30 +111,105 @@ let student = {
        hasScholarship: true,
 }
 
- if (student.paidStatus) {
+if (student.paidStatus) {
        console.log("ram can give exam");
 } else if (student.hasScholarship) {
-              console.log("ram can still give exam");
-       } else{
-              console.log("ram cannot give exam");
-       }
-      
+       console.log("ram can still give exam");
+} else {
+       console.log("ram cannot give exam");
+}
+
 function getMonth(val) {
-       if(val == 1){
-              console.log("jan");      
-       } else if(val == 2){
+       if (val == 1) {
+              console.log("jan");
+       } else if (val == 2) {
               console.log("feb");
-       }else if(val == 3){
+       } else if (val == 3) {
               console.log("march");
-       }else if(val == 4){
+       } else if (val == 4) {
               console.log("april");
-       } else if(val == 0){
+       } else if (val == 0) {
               console.log("invalid");
+       }
+}
+getMonth(3)
+
+
+function getDay(Days) {
+       switch (Days) {
+              case 1:
+                     console.log("Sunday");
+                     break;
+
+              case 2:
+                     console.log("Monday");
+                     break;
+
+              case 3:
+                     console.log("Tuesday");
+                     break;
+              default:
+                     console.log("Invalid Week Days");
+                     break;
        }
 
 }
-getMonth (1)
-getMonth(2)
-getMonth(3)
-getMonth(4)
-getMonth(0)
+getDay(3)
+let todos = [
+       {
+              title: "html",
+              status: false,
+       },
+       {
+              title: "Javascript",
+              status: true,
+       }
+]
+//  function checkStatus(index) {
+for (let index = 0; index < todos.length; index++) {
+       if (todos[index].status) {
+              console.log(`${todos[index].title} is completed`);
+       } else {
+              console.log(`${todos[index].title} is pending`);
+       }
+}
+
+
+//  checkStatus(0)
+//  checkStatus(1)
+
+
+
+let mayorCandidate = [
+       {
+              candidate: "BALEN",
+              corrupt: true,
+       },
+       {
+              candidate: "Marc",
+              corrupt: false,
+       },
+       {
+              candidate: "Nico",
+              corrupt: false,
+       }]
+
+function showPossibility(mayor) {
+       if (mayorCandidate[mayor].corrupt) {
+              console.log(`${mayorCandidate[mayor].candidate} cannot run again `);
+       }
+       // else if(mayorCandidate[mayor].corrupt){
+       //        console.log(`${mayorCandidate[mayor].secondCandidate} can run for mayor`);
+       else {
+              console.log(`${mayorCandidate[mayor].candidate} can run for mayor`);
+       }
+}
+showPossibility(0)
+showPossibility(2)
+
+// function checkStatus(i) {
+//        for (let i = 0; i < todos.length; i++) {
+//            if (todos[i].status) {
+//                console.log(`${todos[i].title} is completed.`);
+//            } else {
+//                console.log(`${todos[i].title} is pending.`);

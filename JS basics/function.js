@@ -161,3 +161,28 @@ blogInfo(1);
 blogInfo(2);
 blogInfo(3);
 
+ //console.dir(document.body.childNodes)[1];
+
+//  let firstEl= document.querySelector("#myId") // 1st Element
+//  console.dir(firstEl);
+// let allEl = document.querySelectorAll(".myClass"); // all Elements
+// console.dir(allEl);
+
+ const  element = document.getElementsByClassName("myClass").innerHtml = "in JS";
+
+// console.dir(h2.innerText)
+// h2.innerText = h2.innerText + " in JavaScript";
+
+// Create 3 divs with common names -"box" .Access them & add
+// some unique text to each other
+
+// let newBtn = document.createElement("button")
+// newBtn.innerText = "Click Me!"
+// console.log(newBtn);
+// let divs = document.querySelectorAll(".box")
+// divs.prepend(newBtn);
+ let newHeading = document.createElement("h1");// to add a new heading
+ newHeading.innerHTML = "<i> Hi, I am New </i>"
+ document.querySelector("body").prepend(newHeading)
+ let para = document.querySelector("p")
+ para.remove();

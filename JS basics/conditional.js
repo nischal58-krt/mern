@@ -194,7 +194,7 @@ let mayorCandidate = [
               corrupt: false,
        }]
 
-function showPossibility(mayor) {
+showPossibility = (mayor) => {
        if (mayorCandidate[mayor].corrupt) {
               console.log(`${mayorCandidate[mayor].candidate} cannot run again `);
        }
